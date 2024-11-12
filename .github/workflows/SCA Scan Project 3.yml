@@ -50,7 +50,7 @@ jobs:
 
       - name: Pull Docker Image
 
-        run: docker pull noahgrillo/wordpress
+        run: docker pull noahgrillo/wordpress:beta-php8.3-fpm-alpine
 
 
 
@@ -90,7 +90,7 @@ jobs:
 
         scanners: 'vuln'
 
-        image-ref: CHANGE
+        image-ref: noahgrillo/wordpress:beta-php8.3-fpm-alpine
 
         scan-ref: '.'
 
